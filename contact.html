@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .font {
+            width: 200px;
+            border: 0px;
+            padding: 5px;
+            margin: 2px;
+            outline: none;
+        }
+
+        .wrapper {
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <button><a href="index.html">back</a></button>
+        <div class="wrapper">
+            <h1>Contact</h1>
+            <p>Any questions? Contact me here:</p><br>
+            <form>
+                <input type="text" placeholder="Name" required class="font" id="name"><br>
+                <input type="text" placeholder="Email address" required class="font" id="email"><br>
+                <textarea name="message" rows="10" class="font" placeholder="Message" id="message"></textarea><br>
+                <button type="submit" id="button">Submit</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        document.getElementById("button").addEventListener("click", () => {
+            feedback();
+        })
+
+        function feedback() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            alert(name + " " + email + " " + message + " ");
+        }
+    </script>
+</body>
+
+</html>

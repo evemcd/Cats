@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eve - page 2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wrapper {
+            display: block;
+        }
+
+        .half {
+            display: inline-block;
+            width: 49%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav><a href="index.html">Index</a></nav>
+    <nav><a href="index3.html">Page 3</a></nav>
+    <main>
+        <h1>Page 2</h1>
+        <p>Click <a href="#">here</a> at some point when I decide what the link will be.</p>
+        <p>Click here to view more<br>
+            <a href="#"><img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."></a>.
+        </p><br><br>
+        <div class="wrapper">
+            <div class="half">
+                <p>Cats love</p>
+                <ul>
+                    <li>milk</li>
+                    <li>cheese</li>
+                    <li>catnip</li>
+                </ul>
+            </div>
+            <div class="half">
+                <p>Top 3 things cats hate:</p>
+                <ol>
+                    <li>dogs</li>
+                    <li>me</li>
+                    <li>rain</li>
+                </ol>
+            </div>
+        </div>
+        <input type="text" placeholder="email address" required> <button>Submit</button>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <input type="text" placeholder="cat photo URL">
+            <button type="submit">Submit</button>
+        </form>
+        <br><br>
+        <p>Where does your cat like to spend their time?</p>
+        <form action="Index.html">
+            <label for="indoor">
+                <input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked>Indoor
+            </label>
+            <label for="outdoor">
+                <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor
+            </label>
+            <label for="other">
+                <input id="other" value="other" type="radio" name="indoor-outdoor">Other
+                <input type="text" placeholder="please specify">
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+
+
+        <br><br>
+        <p>What is your cat's character like?</p>
+        <label for="loving">
+            <input id="loving" value="loving" type="checkbox" name="personality"> Loving</label><br>
+        <label for="hungry">
+            <input id="hungry" value="hungry" type="checkbox" name="personality"> Hungry</label><br>
+        <label for="quiet">
+            <input id="quiet" value="quiet" type="checkbox" name="personality"> Quiet</label><br>
+
+    </main>
+</body>
+
+</html>
